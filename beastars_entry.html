@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Beastars × Take</title>
+<!-- google fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+<!-- css -->
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="body_entry">
+    <div id="wrap_entry">
+        <!-- title -->
+        <header>
+            <a href="./beastars_entry.html">
+                <img src="./imgs/beastars.jpg" id="title" alt="タイトル">
+            </a>
+        </header>
+        <!-- 名前入力 -->
+        <div class="nameinput">
+            <p>Your name is...<label class="ef"><input type="text" id="yourname" placeholder="Type your name"></label></p>
+        </div>
+        <!-- キャラクター選択 -->
+        <div id="character_select">
+            <div class="letter_wrap">
+                <p id="ppp">Your character is...</p>
+            </div>
+            <form id="character" name="form1">
+                <div class="image_wrap">
+                    <input id="image_a_input" type="radio" value="image_a.jpg" name="image" onchange="onRadioButtonChange();">
+                    <label id="image_a" for="image_a_input">
+                        <img src="./imgs/1.regoshi.png">
+                    </label>
+                </div>
+                <div class="image_wrap">
+                    <input id="image_b_input" type="radio" value="image_b.jpg" name="image" onchange="onRadioButtonChange();">
+                    <label id="image_b" for="image_b_input">
+                        <img src="./imgs/2.haru.png">
+                    </label>
+                </div>
+                <div class="image_wrap">
+                    <input id="image_c_input" type="radio" value="image_c.jpg" name="image" onchange="onRadioButtonChange();">
+                    <label id="image_c" for="image_c_input">
+                        <img src="./imgs/3.rui.png">
+                    </label>
+                </div>
+                <div class="image_wrap">
+                    <input id="image_d_input" type="radio" value="image_d.jpg" name="image" onchange="onRadioButtonChange();">
+                    <label id="image_d" for="image_d_input">
+                        <img src="./imgs/4.juno.png">
+                    </label>
+                </div>
+                <div class="image_wrap">
+                    <input id="image_e_input" type="radio" value="image_e.jpg" name="image" onchange="onRadioButtonChange();">
+                    <label id="image_e" for="image_e_input">
+                        <img src="./imgs/5.jack.png">
+                    </label>
+                </div>
+                <div class="image_wrap">
+                    <input id="image_f_input" type="radio" value="image_f.jpg" name="image" onchange="onRadioButtonChange();">
+                    <label id="image_f" for="image_f_input">
+                        <img src="./imgs/6.gohin.png">
+                    </label>
+                </div>
+                <div class="image_wrap">  
+                    <input id="image_g_input" type="radio" value="image_g.jpg" name="image" onchange="onRadioButtonChange();">
+                    <label id="image_g" for="image_g_input">
+                        <img src="./imgs/7.mayor.png">
+                    </label>
+                </div>
+                <div class="image_wrap">
+                    <input id="image_h_input" type="radio" value="image_h.jpg" name="image" onchange="onRadioButtonChange();">
+                    <label id="image_h" for="image_h_input">
+                        <img src="./imgs/8.ibuki.png">
+                    </label>
+                </div>
+                <div class="image_wrap">
+                    <input id="image_i_input" type="radio" value="image_i.jpg" name="image" onchange="onRadioButtonChange();">
+                    <label id="image_i" for="image_i_input">
+                        <img src="./imgs/9.flee.png">
+                    </label>
+                </div>
+                <div class="image_wrap">
+                    <input id="image_j_input" type="radio" value="image_j.jpg" name="image" onchange="onRadioButtonChange();">
+                    <label id="image_j" for="image_j_input">
+                        <img src="./imgs/10.pina.png">
+                    </label>
+                </div>
+                <div class="image_wrap">
+                    <input id="image_k_input" type="radio" value="image_k.jpg" name="image" onchange="onRadioButtonChange();">
+                    <label id="image_k" for="image_k_input">
+                        <img src="./imgs/11.rokume.png">
+                    </label>
+                </div>
+                <div class="image_wrap">
+                    <input id="image_l_input" type="radio" value="image_l.jpg" name="image" onchange="onRadioButtonChange();">
+                    <label id="image_l" for="image_l_input">
+                        <img src="./imgs/12.lizu.png">
+                    </label>
+                </div>
+            </form>
+        </div>
+        <!-- データベース登録 -->
+        <div id="register">Register</div>
+        <div id="count_wrap"><span id="count">5 </span><span>players till <img src="./imgs/beastars.jpg" id="letter_beastars"> starts...</span></div>
+        <ul id="waiting"></ul>
+        </div>
+    </div>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--** 以下Firebase **-->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="./js/entry.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

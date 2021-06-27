@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Beastars × Take</title>
+<!-- google fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+<!-- css -->
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="body_main">
+    <div id="wrap_entry">
+        <header>
+            <a href="./beastars_entry.html">
+                <img src="./imgs/beastars.jpg" id="title" alt="タイトル">
+            </a>
+        </header>
+        <main id="main_all">
+            <div id="main_explanation">
+                <!-- ライン風画面 -->
+                <div id="main">
+                    <div id="message">
+                        <div id="output"></div>
+                    </div>
+                    <div id="textinput">
+                        <label id="ef"><input type="text" id="text" placeholder="Type your thoughts in here!"></label>
+                        <button id="send">send</button>
+                    </div>
+                </div>
+                <!-- ゲーム説明 -->
+                <div id="explanation">
+                    <div id="aaa">
+                        <p class="roles">役割紹介</p>
+                        <p class="functions">Dealer</p>
+                        <p class="details">以下に記載のお題を基に、Yes/Noで回答する</p>
+                        <p class="functions">Herbivore</p>
+                        <p class="details">Yes/Noで回答できる質問をし回答を導きながら、Carnivoreを探し出す</p>
+                        <p class="functions">Carnivore</p>
+                        <p class="details">Yes/Noで回答できる質問をし正解に誘導しながら、Herbivoreに見つからないようにする</p>
+                    </div>
+                    <div class="youare">You are...</div>
+                    <div id="importance"></div>
+                    <div class="youare">お題は...</div>
+                    <div id="question"></div>
+                </div>
+            </div>
+            <!-- Answer画面 -->
+            <div id="letter_carnivore">Who is the <span id="carnivore">Carnivore</span>...?</div>
+            <form id="answer_all" name="form2">
+                <div class="answer_wrap">
+                    <input id="answer_a_input" type="radio" value="image_a.jpg" name="image">
+                    <label id="answer_a" for="answer_a_input"></label>
+                </div>
+                <div class="answer_wrap">
+                    <input id="answer_b_input" type="radio" value="image_b.jpg" name="image">
+                    <label id="answer_b" for="answer_b_input"></label>
+                </div>
+                <div class="answer_wrap">
+                    <input id="answer_c_input" type="radio" value="image_c.jpg" name="image">
+                    <label id="answer_c" for="answer_c_input"></label>
+                </div>
+                <div class="answer_wrap">
+                    <input id="answer_d_input" type="radio" value="image_d.jpg" name="image">
+                    <label id="answer_d" for="answer_d_input"></label>
+                </div>
+                <div class="answer_wrap">
+                    <input id="answer_e_input" type="radio" value="image_e.jpg" name="image">
+                    <label id="answer_e" for="answer_e_input"></label>
+                </div>
+                <div class="answer_wrap">
+                    <input id="answer_f_input" type="radio" value="image_f.jpg" name="image">
+                    <label id="answer_f" for="answer_f_input"></label>
+                </div>
+                <div class="answer_wrap">
+                    <input id="answer_g_input" type="radio" value="image_g.jpg" name="image">
+                    <label id="answer_g" for="answer_g_input"></label>
+                </div>
+                <div class="answer_wrap">
+                    <input id="answer_h_input" type="radio" value="image_h.jpg" name="image">
+                    <label id="answer_h" for="answer_h_input"></label>
+                </div>
+                <div class="answer_wrap">
+                    <input id="answer_i_input" type="radio" value="image_i.jpg" name="image">
+                    <label id="answer_i" for="answer_i_input"></label>
+                </div>
+                <div class="answer_wrap">
+                    <input id="answer_j_input" type="radio" value="image_j.jpg" name="image">
+                    <label id="answer_j" for="answer_j_input"></label>
+                </div>
+                <div class="answer_wrap">
+                    <input id="answer_k_input" type="radio" value="image_k.jpg" name="image">
+                    <label id="answer_k" for="answer_k_input"></label>
+                </div>
+                <div class="answer_wrap">
+                    <input id="answer_l_input" type="radio" value="image_l.jpg" name="image">
+                    <label id="answer_l" for="answer_l_input"></label>
+                </div>
+            </form>
+            <div id="getResult">Get result !</div>
+        </main>
+    </div>
+    <footer></footer>
+    <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--** 以下Firebase **-->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

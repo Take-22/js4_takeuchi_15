@@ -1,0 +1,397 @@
+#title{
+    max-width: 300px;
+    margin: auto;
+    padding: 20px 0;
+}
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    color:white;
+    width: 1170px;
+    margin: auto;
+    background-color: black;
+    /* background-image: url(../imgs/background01.png); */
+}
+/* _______________________________ */
+/* Entry画面 */
+#wrap_entry{
+    margin: auto;
+    padding: 0 75px;
+    background-color: black;
+}
+p{
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.nameinput{
+    position: relative;
+}
+    .nameinput input[type="text"]{
+        font: 15px/24px;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0.3em;
+        transition: 0.3s;
+        letter-spacing: 1px;
+        color: white;
+        border: none;
+        border-bottom: 2px solid #1b2538;
+        background: transparent;
+    }
+    .ef input[type="text"]:focus {
+        border-bottom: 2px solid #fe0048;
+        outline: none;
+    }
+#yourname{
+    margin: 10px 1px;
+}
+#yourname::placeholder{
+    color: rgba(255, 255, 255, 0.623);
+    font-size: 15px;
+}
+/* キャラクター選択 */
+#background{
+    display: block;
+    position: relative;
+}
+#background_image{
+    width: 100%;
+    border-radius: 30px;
+}
+#ready{
+    display: block;
+    color: white;
+    font-size: 75px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all .3s;
+    text-shadow:1px 0 0 #000,0 1px 0 #000,-1px 0 0 #000,0 -1px 0 #000,3px 3px 0 #000;
+}
+    #ready:hover{
+        color: #fe0048;
+    }
+.letter_wrap{
+    height: 50px;
+}
+    /* キャラクター選択画面 */
+#character{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.image_wrap{
+    width: 160px;
+    height: 189px;
+    transition: all 0.3s ease 0s;
+}
+.image_wrap:hover{
+    transform: translateY(-0.5em);
+}
+    /* ラジオボタンの○を消す */
+    input[type="radio"] {
+        display: none;
+    }    
+    /* 画像の周りに隙間をあける */
+    label img {
+    margin: 3px;
+    padding: 5px;
+    cursor: pointer;
+    }
+    /* 未選択の場合、色を薄くする */
+    input[type="radio"] + label img {
+    opacity:0.4;
+    }
+    /* hoverの場合、色を濃くする */
+    input[type="radio"]:hover + label img {
+        opacity:0.6;
+    }
+    /* 選択済みの場合、色を濃くする */
+    input[type="radio"]:checked + label img {
+    opacity:1;
+    }
+/* register */
+#register{
+    font-size: 25px;
+    margin: 20px 464px 30px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+    border-color: white;
+    position: relative;
+    font-weight: bold;
+}
+    #register:hover{
+        color: #fe0048;
+    }
+    #register:after{
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 2px;
+        background: #fe0048;
+        transform: scale(0, 1);
+        transform-origin: center top;
+        transition: transform .3s;
+    }
+    #register:hover::after {
+        transform: scale(1, 1);
+    }
+/* Player Count */
+#count{
+    font-weight: bold;
+    color: #fe0048;
+}
+#count_wrap{
+    font-size: 40px;
+    padding: 10px 0;
+}
+#letter_beastars{
+    width: 175px;
+}
+#waiting{
+    padding: 25px 0;
+    display: flex;
+    height: 200px;
+}
+.waiting_space{
+    margin-right: 20px;
+}
+
+/* _______________________________ */
+/* main画面 */
+    /* 取扱説明書 */
+    #main_explanation{
+        display: flex;
+        flex-wrap: wrap;
+        width: 1100px;
+    }
+    #explanation{
+        width: 490px;
+        padding: 0 15px;
+    }
+    #aaa{
+        border-bottom: 1px solid white;
+    }
+    .functions{
+        background-color: #fe0048;
+        color: black;
+        font-weight: bold;
+        padding: 2px;
+    }
+    .details{
+        font-size: 15px;
+    }
+    .youare{
+        font-size: 20px;
+        margin-top: 12px;
+    }
+    #importance{
+        padding-left: 100px;
+        font-size: 60px;
+        font-weight: bold;
+    }
+    #question{
+        padding-left: 100px;
+        font-size: 60px;
+        font-weight: bold;
+    }
+#main{
+    height: auto;
+    background-color: #000;
+    width: 500px;
+}
+#message{
+    background-color: #b3b3b3;
+}
+#output{
+    overflow: auto;
+    height: 400px;
+}
+#name{
+    font-size: 12.5px;
+    margin-top: 15px;
+    margin-left: 5px;
+    color: black;
+}
+/* 自分のコメント欄 */
+#mysentence{
+    font-size: 10px;
+    max-width: 280px;
+    overflow-wrap: break-word;
+    padding: 0 5px;
+    color: black;
+}
+    #mysentence_wrap{
+        position: relative;
+        margin: 4px 30px 4px 185px;
+        padding: 10px 0;
+        background: #30e852;
+        border-radius: 10px;
+    }
+    #mysentence_wrap:before{  
+        content: "";
+        position: absolute;
+        right: -25px;
+        width: 8px;
+        height: 7px;
+        bottom: 0;
+        background: #30e852;
+        border-radius: 50%;
+    }
+    #mysentence_wrap:after{
+        content: "";
+        position: absolute;
+        right: -15px;
+        width: 11px;
+        height: 10px;
+        bottom: 3px;
+        background: #30e852;
+        border-radius: 50%;
+    }
+
+/* 自分以外のコメント欄 */
+#sentence{
+    font-size: 10px;
+    max-width: 280px;
+    overflow-wrap: break-word;
+    padding: 0 5px;
+    color: black;
+}
+    #sentence_wrap{
+        position: relative;
+        margin: 4px 185px 4px 30px;
+        padding: 10px 0;
+        background: #fff0c6;
+        border-radius: 10px;
+    }
+    #sentence_wrap:before{  
+        content: "";
+        position: absolute;
+        left: -25px;
+        width: 8px;
+        height: 7px;
+        bottom: 0;
+        background: #fff0c6;
+        border-radius: 50%;
+    }
+    #sentence_wrap:after{
+        content: "";
+        position: absolute;
+        left: -15px;
+        width: 11px;
+        height: 10px;
+        bottom: 3px;
+        background: #fff0c6;
+        border-radius: 50%;
+    }
+/* スクロールバーのcss */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #fe0048;
+    border-radius: 10px;
+}
+
+/* textinput */
+#textinput{
+    justify-content: center;
+    position: relative;
+    margin-top: 5px;
+}
+    #textinput input[type="text"] {
+        box-sizing: border-box;
+        width: 87%;
+        height: 28px;
+        padding: 0.3em;
+        transition: 0.3s;
+        letter-spacing: 1px;
+        color: white;
+        border: none;
+        border-bottom: 2px solid #1b2538;
+        background: transparent;
+    }
+    #ef input[type="text"]:focus {
+        border-bottom: 2px solid #fe0048;
+        outline: none;
+    }
+#text{
+    width: 400px;
+}
+#text::placeholder{
+    color: rgba(255, 255, 255, 0.623);
+    font-size: 15px;
+}
+/* sendボタン */
+#send{
+    display: inline-block;
+    padding: 0.3em 0.8em;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border: solid 2px white;
+    border-radius: 3px;
+    transition: .4s;
+    cursor: pointer;
+}
+    #send:hover{
+        background-color: #fe0048;
+        color:black;
+        border: solid 2px #fe0048;
+    } 
+/* Answer画面 */
+#letter_carnivore{
+    font-size: 40px;
+    text-align: left;
+    margin: 20px 0;
+}
+#carnivore{
+    color: #fe0048;
+    font-weight: bold;
+}
+#answer_all{
+    display: flex;
+    margin: 10px 0;
+}
+
+/* 最終結果 */
+#getResult{
+    font-size: 25px;
+    margin: 30px 446px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+    border-color: white;
+    position: relative;
+    font-weight: bold;
+}
+    #getResult:hover{
+        color: #fe0048;
+    }
+    #getResult:after{
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 2px;
+        background: #fe0048;
+        transform: scale(0, 1);
+        transform-origin: center top;
+        transition: transform .3s;
+    }
+    #getResult:hover::after {
+        transform: scale(1, 1);
+    }
